@@ -1,0 +1,6 @@
+Task 1
+1. Create 20 files with .txt extensions and rename the firt 5 files to .yml extension
+[root@localhost vagrant]# touch file {1..20}.txt
+[root@localhost vagrant]# ls
+10.txt  11.txt  12.txt  13.txt  14.txt  15.txt  16.txt  17.txt  18.txt  19.txt  1.txt  20.txt  2.txt  3.txt  4.txt  5.txt  6.txt  7.txt  8.txt  9.txt  file  Vagrantfile
+[root@localhost vagrant]# for i in {1..5}; do mv file$i.txt file$i.yml; done

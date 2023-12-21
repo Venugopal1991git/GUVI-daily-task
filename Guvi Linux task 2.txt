@@ -1,0 +1,27 @@
+Task 2
+1. Create a file with .txt extension (/home/demo.txt). Change the permission set if that file, so that any user can read it, the group can read/write & owner can read/write/execute it.
+
+[vagrant@localhost /]$ ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  tmp  usr  vagrant  var
+[vagrant@localhost /]$ cd home
+[vagrant@localhost home]$ touch demo.txt
+touch: cannot touch ‘demo.txt’: Permission denied
+[vagrant@localhost home]$ sudo su touch demo.txt
+su: user touch does not exist
+[vagrant@localhost home]$ sudo su
+[root@localhost home]# touch demo.txt
+[root@localhost home]# ls
+demo.txt  vagrant
+[root@localhost home]# ls -ll
+total 0
+-rw-r--r--. 1 root    root      0 Dec 14 06:20 demo.txt
+drwx------. 3 vagrant vagrant 143 Dec 14 06:14 vagrant
+[root@localhost home]# chown u+rwx demo
+chown: invalid user: ‘u+rwx’
+[root@localhost home]# chmod 767 demo
+chmod: cannot access ‘demo’: No such file or directory
+[root@localhost home]# chmod 767 demo.txt
+[root@localhost home]# ls -ll
+total 0
+-rwxrw-rwx. 1 root    root      0 Dec 14 06:20 demo.txt
+drwx------. 3 vagrant vagrant 143 Dec 14 06:14 vagrant

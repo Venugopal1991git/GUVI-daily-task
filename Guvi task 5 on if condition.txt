@@ -1,0 +1,14 @@
+[vagrant@localhost ~]$ vi ifcondition.sh
+[vagrant@localhost ~]$ cat ifcondition.sh
+#!/bin/bash
+x=5
+y=5
+if [[ $x -gt $y ]] ;then
+echo "x is greater than y"
+elif[[ $y -gt $x ]] :then
+echo "y is greater than x"
+else
+echo "x and y values are same"
+fi
+[vagrant@localhost ~]$ sh ifcondition.sh
+x and y values are same

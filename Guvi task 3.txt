@@ -1,0 +1,49 @@
+1. Get me the IP address of a particular domain (guvi.in) 
+
+$ nslookup guvi.in
+Non-authoritative answer:
+Server:  broadband.actcorp.in
+Address:  106.51.156.186
+
+Name:    guvi.in
+Addresses:  2606:4700:20::681a:558
+          2606:4700:20::681a:458
+          2606:4700:20::ac43:46cf
+          104.26.4.88
+          104.26.5.88
+          172.67.70.207
+
+2. How do I find the CPU/memory usage of my server?
+ 
+[vagrant@localhost ~]$ free
+              total        used        free      shared  buff/cache   available
+Mem:         498684       90788       42696        4600      365200      390184
+Swap:       2097148           0     2097148
+
+
+3. Test the connectivity between 2 nodes.
+
+[vagrant@localhost ~]$ ping guvi.in
+PING guvi.in (104.26.4.88) 56(84) bytes of data.
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=1 ttl=56 time=24.6 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=2 ttl=56 time=24.4 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=3 ttl=56 time=24.5 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=4 ttl=56 time=24.6 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=5 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=6 ttl=56 time=24.1 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=7 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=8 ttl=56 time=23.8 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=9 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=10 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=11 ttl=56 time=24.1 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=12 ttl=56 time=24.3 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=13 ttl=56 time=24.1 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=14 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=15 ttl=56 time=24.3 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=16 ttl=56 time=24.7 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=17 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=18 ttl=56 time=24.3 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=19 ttl=56 time=24.6 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=20 ttl=56 time=24.1 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=21 ttl=56 time=24.2 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=22 ttl=56 time=24.2 ms

@@ -1,0 +1,11 @@
+[vagrant@localhost ~]$ vi basicscript.sh
+[vagrant@localhost ~]$ sh basicscript.sh
+basicscript.sh: line 2: echoCurrent system date:
+Thu Dec 21 14:18:41 UTC 2023
+basicscript.sh: line 4: echomemory status:
+              total        used        free      shared  buff/cache   available
+Mem:           486M         78M        318M        4.4M         89M        391M
+Swap:          2.0G          0B        2.0G
+basicscript.sh: line 6: echodisk utilization:
+4.0K    ./.ssh
+28K     .
